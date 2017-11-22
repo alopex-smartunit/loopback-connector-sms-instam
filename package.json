@@ -1,7 +1,7 @@
 {
-  "name": "loopback-my-sms-masking-connector",
-  "version": "0.1.1",
-  "description": "loopback connector for mysmsmasking.com",
+  "name": "loopback-connector-sms-instam",
+  "version": "0.1.0",
+  "description": "loopback connector for instam.ru",
   "main": "index.js",
   "homepage": "http://loopback.io",
   "keywords": [
@@ -9,30 +9,22 @@
     "restful",
     "rest",
     "api",
-    "expess",
     "loopback",
-    "twilio",
     "StrongLoop",
-    "framework",
-    "mobile",
-    "mBaaS",
-    "mysmsmasking"
+    "instam"
   ],
   "dependencies": {
     "axios": "^0.16.2"
-  },
+  },  
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Sofyan Hadi Ahmad",
+  "author": "Smart Unit",
   "license": {
     "name": "MIT",
     "url":
-      "https://github.com/sofyanhadia/loopback-my-sms-masking-connector/blob/master/LICENSE"
+      "https://github.com/alopex-smartunit/loopback-connector-sms-instam/blob/master/LICENSE"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sofyanhadia/loopback-my-sms-masking-connector"
+    "url": "https://github.com/alopex-smartunit/loopback-connector-sms-instam"
   }
 }

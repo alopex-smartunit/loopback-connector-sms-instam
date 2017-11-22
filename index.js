@@ -1,1 +1,1 @@
-module.exports = require('./lib/smsmasking');
+module.exports = require('./lib/sms-instam');
