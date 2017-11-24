@@ -11,8 +11,8 @@ In your LoopBack project:
 ## Using the Connector
 To use the connector, define the datasource using the connector in your `datasources.json` file:
     
-    "SMSInstam": {
-        "name": "SMSInstam",
+    "sms": {
+        "name": "sms",
         "connector": "loopback-connector-sms-instam",
         "url": "https://service.instam.ru",
         "username": "INSTAM_USERNAME",
@@ -21,14 +21,14 @@ To use the connector, define the datasource using the connector in your `datasou
   
 Next, attach the created datasource to a model in the `model-config.json` file:
 
-    "SMSInstam": {
-        "dataSource": "SMSInstam",
+    "SMS": {
+        "dataSource": "sms",
         "public": false
     }
     
 Now, using the created model, you can send an SMS or make a call using the `send` method of the model:
     
-    SMSMasking.send(options, callback);
+    SMS.send(options, callback);
     
 **Note**: `options` is defined by the JSON objects in the next two sections:
 
@@ -37,6 +37,8 @@ Now, using the created model, you can send an SMS or make a call using the `send
         to: 'Target Number',
         message: 'Text Message'
     }
+
+Phone number must be 11 digits with '+' prefix
 
 ### Version
 0.1.0
